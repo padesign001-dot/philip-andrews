@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philip Andrews — Design Portfolio</title>
+<meta name="description" content="Philip Andrews — product, brand and visual design portfolio.">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-name">Philip Andrews</span>
+      <span class="brand-tagline">Product, brand &amp; visual design</span>
+    </div>
+    <a class="contact-link" href="mailto:padesign001@gmail.com">padesign001@gmail.com</a>
+  </div>
+</header>
+
+<main>
+  <section class="intro wrap">
+    <p>A selection of work across digital product, brand identity, and print — for clients ranging from Autodesk and Cisco to independent studios and nonprofits.</p>
+  </section>
+
+  <nav class="filters wrap" aria-label="Filter projects">
+    <button class="filter-btn is-active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="product">Digital Product</button>
+    <button class="filter-btn" data-filter="identity">Brand &amp; Identity</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="print">Print &amp; Campaign</button>
+  </nav>
+
+  <section class="grid wrap" id="grid" aria-live="polite"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Philip Andrews</span>
+    <a href="mailto:padesign001@gmail.com">padesign001@gmail.com</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+  <div class="lb-content">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-caption">
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <span id="lbCount" class="lb-count"></span>
+    </div>
+  </div>
+</div>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
